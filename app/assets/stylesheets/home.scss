@@ -1,0 +1,104 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.NavbarTransparent
+{
+	background-color: transparent;
+	border: transparent;
+}
+
+.Brand
+{
+	font-family: 'Pacifico', cursive;
+}
+
+.LinkCollection
+{
+	margin-left: 150px;
+}
+
+*
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.PhotoArea
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 50rem;
+    color: #fff;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+	.PhotoArea
+	{
+	  height: 30rem;
+	  margin-top: 3%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.PhotoArea
+	{
+	  margin-top: 4%;
+	}
+}
+
+.DerImage
+{
+	transition: opacity .4s;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("carpets.jpg"));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.DerCaption
+{
+    webkit-transform: translateY(-50%); 
+ 	transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    left: 1rem;
+    max-width: calc(100% - 1.25em);
+    color: white;
+}
+
+.CarpetBox
+{
+  height: 320px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 80%;	
+}
+
+.CarpetImageBox
+{
+	height: 160px;
+}
+
+.fitimg
+{
+	height: 100%;
+	width: 100%;
+}
+
+.CarpetDescriptionBox
+{
+	padding: 5px;
+	height: 120px;
+}
+
+.CarpetCategory
+{
+	padding: 5px;
+}
