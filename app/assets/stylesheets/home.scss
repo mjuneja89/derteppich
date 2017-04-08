@@ -10,7 +10,48 @@
 
 .Brand
 {
-	font-family: 'Pacifico', cursive;
+   font-family: 'Cookie', cursive;
+   font-size: 30pt;
+}
+
+#Brand a:link
+{
+	color: #FFD700;
+}
+
+#Brand a:hover
+{
+	color: #FFD700;	
+}
+
+#Brand a:visited
+{
+	color: #FFD700;	
+}
+
+#button
+{
+	font-size: 18pt;
+}
+
+#button a:link
+{
+	color: black;
+	text-decoration: none;
+}
+
+
+#button a:hover
+{
+   	color: black;
+	text-decoration: none;	
+}
+
+
+#button a:visited
+{
+    color: black;
+	text-decoration: none;		
 }
 
 .LinkCollection
@@ -20,7 +61,7 @@
 
 *
 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'BioRhyme', serif;
 }
 
 .PhotoArea
