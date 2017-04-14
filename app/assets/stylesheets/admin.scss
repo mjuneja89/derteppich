@@ -1,0 +1,76 @@
+// Place all the styles related to the admin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#AdminButton
+{
+	color: white;
+	background-color: #FFD700;
+	border-color: #FFD700;
+	width: 50%;
+}
+
+#AdminButton1
+{  
+	color: white;
+	background-color: #FFD700;
+	border-color: #FFD700;
+	width: 60%;
+}
+
+#AdminButton a:link
+{
+	color: white;
+	background-color: #FFD700;
+	text-decoration: none;
+}
+
+
+#AdminButton a:hover
+{
+	color: white;
+	background-color: #FFD700;
+	text-decoration: none;
+}
+
+
+#AdminButton a:visited
+{
+	color: white;
+	background-color: #FFD700;
+	text-decoration: none;
+}
+
+#DerInput
+{
+	width: 60%;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#DerInputArea
+{
+	width: 60%;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #DerInput
+    {
+       width: 80%;
+    }
+
+    #DerInputArea
+    {
+       width: 80%;
+    }
+
+    #AdminButton1
+    {
+      width: 80%;
+    }
+}

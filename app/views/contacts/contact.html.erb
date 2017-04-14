@@ -1,0 +1,46 @@
+
+<head>
+
+<title>Der Teppich International: Contact Us</title>
+
+</head>
+
+<body>
+
+<%= render 'shared/navbar' %>
+
+<div class="container-fluid">
+  
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <h1>contact us</h1>     
+  </div>
+  
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <h4>C-178, LGF, Sarvodaya Enclave</h4>
+    <h4>New Delhi - 110017, India</h4>
+    <h4>Phone No: +91-9716299814, +917017101100</h4>
+    <h4>Email: derteppichinternational@gmail.com</h4>
+  </div>
+
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <div class="col-sm-6 col-sm-offset-3">
+     
+     <h1>enquire</h1>
+
+     <%= form_for(Contact.new, url: contacts_path, class: "form-group", :style => "text-align: center") do |f| %>
+
+       <%= f.text_field :name, :placeholder => "enter your name", :id => "DerInput", :class => "form-control" %>
+       <%= f.email_field :email, :placeholder => "enter your email", :id => "DerInput", :class => "form-control" %>
+       <%= f.text_area :description, :placeholder => "how can we help you?", :id => "DerInputArea", :class => "form-control" %>
+       
+       <%= f.submit "send", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
+
+     
+     <% end %> 
+    </div>
+  </div>
+
+</div>
+
+	
+</body>

@@ -1,0 +1,64 @@
+
+<head>
+
+<title>Der Teppich International: Admin View</title>
+
+</head>
+
+<body>
+
+<%= render 'shared/navbar' %>
+
+<div class="row" style="margin-top: 3%">
+ <div class="col-sm-6 col-sm-offset-3" style="text-align: center">
+    <h1>administrator view</h1>
+ </div>
+</div>
+
+<div class="row" style="margin-top: 3%">
+
+<div class="col-sm-6 col-sm-offset-3" style="text-align: center"><h2>carpet menu</h2></div>
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-6" style="text-align: center; margin-top: 3%">
+  <div class="btn btn-default" id="AdminButton">
+    <%= link_to carpets_path do %>
+     view carpets
+    <% end %>
+  </div>
+</div>
+
+<div class="col-sm-6" style="text-align: center; margin-top: 3%">
+  <div class="btn btn-default" id="AdminButton">
+   <%= link_to new_carpet_path do %> 
+     new carpet
+   <% end %>
+  </div>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-sm-6" style="text-align: center; margin-top: 3%">
+  <div class="btn btn-default" id="AdminButton">
+   <%= link_to carpets_path do %>
+    edit carpet(s) 
+   <% end %> 
+  </div>
+</div>
+
+<div class="col-sm-6" style="text-align: center; margin-top: 3%">
+  <div class="btn btn-default" id="AdminButton">
+   <%= link_to carpets_path do %>
+    delete carpet(s)
+   <% end %> 
+  </div>
+</div>
+
+</div>
+	
+</body>

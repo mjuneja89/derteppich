@@ -8,5 +8,12 @@ Rails.application.routes.draw do
 
   get '/handloomdurries' => 'carpets#handloomdurries'
 
+  get '/adminview' => 'admin#adminview'
+
+  resources :carpets
+
+  resources :contacts
+
+  get '/contact' => 'contacts#contact'
 
 end
