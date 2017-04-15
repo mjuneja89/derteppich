@@ -1,18 +1,18 @@
-<div class="col-sm-3" style="margin-top: 3%;">
+<div class="col-sm-3" style="margin-top: 3%; text-align: center">
 <div class="CarpetBox">
     <div class="CarpetImageBox">
        <%= image_tag(carpet.photo_url, :class => "fitimg") %> 
     </div>
-    <div class="CarpetNameBox">
+    <div class="CarpetNameBox" style="text-align: center">
          <h3><%= carpet.name %></h3> 
     </div>
-    <div id="AdminButton">
-     <%= link_to edit_carpet_path(carpet_path), :class => "btn btn-default" do %> 
+    <div id="AdminButton2" class="btn btn-default">
+     <%= link_to edit_carpet_path(carpet) do %> 
       edit
      <% end %> 
     </div>
-    <div id="AdminButton">
-     <%= link_to carpet_path(carpet), :class => "btn btn-default", :method => "destroy" do %>
+    <div id="AdminButton2" class="btn btn-default">
+     <%= link_to carpet_path(carpet), :method => "destroy" do %>
       delete
      <% end %> 
     </div>
