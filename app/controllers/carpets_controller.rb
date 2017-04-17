@@ -1,13 +1,21 @@
 class CarpetsController < ApplicationController
     
     def handtufted
+        @handtufted = Carpet.where(:category => 'hand tufted')
     end
 
     def handloomweave
+        @handloomweaves = Carpet.where(:category => 'handloom weave')
     end
 
     def handloomdurries
+        @handloomdurries = Carpet.where(:category => 'handloom durries')
     end
+    
+    def handknotted
+        @handknotted = Carpet.where(:category => 'hand knotted')
+    end
+    
 
     def new
        @carpet = Carpet.new
@@ -41,6 +49,12 @@ class CarpetsController < ApplicationController
 
     def index
         @carpets = Carpet.all
+    end
+
+    def destroy
+        @carpet = Carpet.find(params[:id])
+        Carpet.destroy(@carpet)
+        redirect_to carpets_path
     end
 
     private

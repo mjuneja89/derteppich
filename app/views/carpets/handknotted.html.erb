@@ -16,23 +16,21 @@
      </figure>
 
      <div class="DerCaption">
-      <h1>hand tufted</h1>
+      <h1>hand knotted</h1>
      </div>
 
 </div>
 
 <div class="container-fluid">
   
-  <h2>hand tufted</h2>
+  <h2>hand knotted</h2>
   
- <% if @handtufted.present? %>  
+<% if @handknotted.present? %>
   <div class="row" style="margin-top: 3%">  
-   <% @handtufted.each do |carpet| %>
-     <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
+   <% @handknotted.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
    <% end %>
   </div>
   <% end %>
-
-</div>
 	
 </body>

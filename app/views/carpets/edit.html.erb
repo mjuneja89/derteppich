@@ -58,18 +58,18 @@
        
        <%= form_for(@carpet, url: carpet_path(@carpet)) do |f| %>
           
-          <%= f.text_field :name, :placeholder => "enter carpet's name", :class => "DerInput" %>
-          <%= f.text_area :description, :placeholder => "enter carpet's description", :class => "DerInputArea" %>
+          <%= f.text_field :name, :placeholder => "enter carpet's name", :id => "DerInput", :class => "form-control" %>
+          <%= f.text_area :description, :placeholder => "enter carpet's description", :id => "DerInput", :class => "form-control" %>
 
-          <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries']]), {}, {class: "DerInput"}) %>
+          <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries']]), {}, {id: "DerInput"}) %>
 
           <%= f.file_field :photo, :id => "photofield", :style => "display: none;" %>
 
          <div id="photobtn" style="text-align: center">
-            <a href="#" id="choosephoto" class="btn btn-default AdminButton">add cover</a>   
+            <a href="#" id="choosephoto" style="margin-top: 3%" class="btn btn-default">add cover</a>   
           </div>
 
-          <%= f.submit "update", :class => "AdminButton" %>
+          <%= f.submit "update", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
 
        <% end %>
 

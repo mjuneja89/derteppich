@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get '/handloomweave' => 'carpets#handloomweave'
 
   get '/handloomdurries' => 'carpets#handloomdurries'
+ 
+  get '/handknotted' => 'carpets#handknotted'
+  
 
   get '/adminview' => 'admin#adminview'
 

@@ -12,7 +12,7 @@
      <% end %> 
     </div>
     <div id="AdminButton2" class="btn btn-default">
-     <%= link_to carpet_path(carpet), :method => "destroy" do %>
+     <%= link_to carpet_path(carpet), :method => "delete", data: {confirm: "Are you sure?"} do %>
       delete
      <% end %> 
     </div>

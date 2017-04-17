@@ -24,51 +24,13 @@
   
   <h2>handloom weaves</h2>
   
-  <div class="row" style="margin-top: 3%; margin-bottom: 3%">
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox"> 
-        <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox">  
-         <h3>description of the carpet</h3> 
-    </div> 
-
-  </div> 
+  <% if @handloomweaves.present? %>
+  <div class="row" style="margin-top: 3%">  
+  <% @handloomweaves.each do |carpet| %>
+    <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+  <% end %>
   </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox"> 
-         <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox">  
-          <h3>description of the carpet</h3>  
-    </div>
-  </div> 
-  </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox"> 
-         <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox">  
-         <h3>description of the carpet</h3> 
-    </div>
-         
-  </div> 
-  </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox"> 
-      <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox"> 
-          <h3>description of the carpet</h3> 
-    </div> 
-
-  </div> 
-  </div>
-  </div>
+  <% end %>
 
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
@@ -77,56 +39,58 @@
       </div>
     </div> 
   </div>
+  
+  <h2>hand knotted</h2>
+  
+  <% if @handknotted.present? %>
+  <div class="row" style="margin-top: 3%">  
+   <% @handknotted.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
+  </div>
+  <% end %>
+
+  <div class="row" style="margin-top: 3%">
+    <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
+      <div class="btn btn-default" id="button">
+        <a href="/handknotted">see more</a>
+      </div>
+    </div> 
+  </div>
+
 
   <h2>hand tufted</h2>
-
-  <div class="row" style="margin-top: 3%; margin-bottom: 3%">
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox">
-      <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox">  
-         <h3>description of the carpet</h3> 
-    </div>  
-   </div> 
+  
+  <% if @handtufted.present? %>  
+  <div class="row" style="margin-top: 3%">  
+   <% @handtufted.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
   </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox">
-       <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox">
-         <h3>description of the carpet</h3> 
-    </div>
-  </div> 
-  </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox">
-       <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox"> 
-         <h3>description of the carpet</h3>  
-    </div> 
-  </div> 
-  </div>
-  <div class="col-sm-3">
-  <div class="CarpetBox">
-    <div class="CarpetImageBox">
-        <%= image_tag("carpetdisplay.jpg", :class => "fitimg") %> 
-    </div>
-    <div class="CarpetDescriptionBox"> 
-         <h3>description of the carpet</h3> 
-    </div>
-  </div> 
-  </div>
-  </div>
+  <% end %>
 
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
       <div class="btn btn-default" id="button">
         <a href="/handtufted">see more</a>
+      </div>
+    </div> 
+  </div>
+
+ <h2>handloom durries</h2>
+  
+  <% if @handloomdurries.present? %>
+  <div class="row" style="margin-top: 3%">  
+   <% @handloomdurries.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
+  </div>
+  <% end %>
+
+  <div class="row" style="margin-top: 3%">
+    <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
+      <div class="btn btn-default" id="button">
+        <a href="/handloomdurries">see more</a>
       </div>
     </div> 
   </div>
