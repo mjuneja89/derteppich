@@ -61,13 +61,10 @@
           <%= f.text_field :name, :placeholder => "enter carpet's name", :id => "DerInput", :class => "form-control" %>
           <%= f.text_area :description, :placeholder => "enter carpet's description", :id => "DerInput", :class => "form-control" %>
 
-          <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries']]), {}, {id: "DerInput"}) %>
+          <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries'], ['hand knotted', 'hand knotted']]), {}, {id: "DerInput"}) %>
 
-          <%= f.file_field :photo, :id => "photofield", :style => "display: none;" %>
+          <%= f.file_field :photo %>
 
-         <div id="photobtn" style="text-align: center">
-            <a href="#" id="choosephoto" style="margin-top: 3%" class="btn btn-default">add cover</a>   
-          </div>
 
           <%= f.submit "update", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
 

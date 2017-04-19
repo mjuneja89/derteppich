@@ -1,7 +1,9 @@
-<div class="col-sm-3" style="margin-top: 3%; text-align: center">
+<div class="col-sm-3" style="margin-top: 1%; text-align: center">
 <div class="CarpetBox">
     <div class="CarpetImageBox">
+      <%= link_to carpet_path(carpet) do %>
        <%= image_tag(carpet.photo_url, :class => "fitimg") %> 
+      <% end %> 
     </div>
     <div class="CarpetNameBox" style="text-align: center">
          <h3><%= carpet.name %></h3> 

@@ -63,11 +63,7 @@
 
           <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries'], ['hand knotted', 'hand knotted']]), {}, {id: "DerInput"}) %>
 
-          <%= f.file_field :photo, :id => "photofield", :style => "display: none;" %>
-
-         <div id="photobtn" style="text-align: center">
-            <a href="#" id="choosephoto" style="margin-top: 3%" class="btn btn-default">add cover</a>
-          </div>
+          <%= f.file_field :photo %>
 
           <%= f.submit "create", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
 

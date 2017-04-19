@@ -9,20 +9,71 @@
 
 <%= render 'shared/navbar' %>
 
-<div class="PhotoArea">
-     
-     <figure class="DerImage">
-     </figure>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
 
-     <div class="DerCaption">
-      <h1>beautiful carpets.</h1>
-     </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carouselimage">
+      <%= image_tag "main.jpg", :style => "width: 100%" %>
+      <div class="carousel-caption" style="text-align: left; margin-left: -150px;">
+        <h1>Beautiful Rugs</h1>
+      </div>
+    </div>
 
+    <div class="item carouselimage">
+      <%= image_tag("handloomweave.jpg", :style => "width: 100%") %>
+       <div class="carousel-caption" style="text-align: left; margin-left: -150px;">
+        <h1>Handloom Weave</h1>
+       </div>
+    </div>
+
+    <div class="item carouselimage">
+      <%= image_tag("handknotted.jpg", :style => "width: 100%") %>
+      <div class="carousel-caption" style="text-align: left; margin-left: -150px;">
+        <h1>Hand Knotted</h1>
+       </div>
+    </div>
+
+    <div class="item carouselimage">
+      <%= image_tag("handtufted.jpg", :style => "width: 100%") %>  
+      <div class="carousel-caption" style="text-align: left; margin-left: -150px;">
+        <h1>Hand Tufted</h1>
+       </div>  
+    </div>
+    
+    <div class="item carouselimage">
+      <%= image_tag("handloomdurries.jpg", :style => "width: 100%") %> 
+       <div class="carousel-caption" style="text-align: left; margin-left: -150px;">
+        <h1>Handloom Durries</h1>
+       </div>  
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <div class="container-fluid">
   
-  <h2>handloom weaves</h2>
+  <h2 style="margin-top: 3%">Handloom Weaves</h2>
   
   <% if @handloomweaves.present? %>
   <div class="row" style="margin-top: 3%">  
@@ -35,12 +86,12 @@
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
       <div class="btn btn-default" id="button">
-        <a href="/handloomweave">see more</a>
+        <a href="/handloomweave">See More</a>
       </div>
     </div> 
   </div>
   
-  <h2>hand knotted</h2>
+  <h2>Hand Knotted</h2>
   
   <% if @handknotted.present? %>
   <div class="row" style="margin-top: 3%">  
@@ -53,13 +104,13 @@
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
       <div class="btn btn-default" id="button">
-        <a href="/handknotted">see more</a>
+        <a href="/handknotted">See More</a>
       </div>
     </div> 
   </div>
 
 
-  <h2>hand tufted</h2>
+  <h2>Hand Tufted</h2>
   
   <% if @handtufted.present? %>  
   <div class="row" style="margin-top: 3%">  
@@ -72,12 +123,12 @@
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
       <div class="btn btn-default" id="button">
-        <a href="/handtufted">see more</a>
+        <a href="/handtufted">See More</a>
       </div>
     </div> 
   </div>
 
- <h2>handloom durries</h2>
+ <h2>Handloom Durries</h2>
   
   <% if @handloomdurries.present? %>
   <div class="row" style="margin-top: 3%">  
@@ -90,7 +141,7 @@
   <div class="row" style="margin-top: 3%">
     <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
       <div class="btn btn-default" id="button">
-        <a href="/handloomdurries">see more</a>
+        <a href="/handloomdurries">See More</a>
       </div>
     </div> 
   </div>

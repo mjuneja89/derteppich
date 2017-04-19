@@ -40,8 +40,8 @@ class CarpetsController < ApplicationController
 
     def update
     	@carpet = Carpet.find(params[:id])
-    	if @carpet.update_attributes(award_params)
-    		redirect_to 'adminview_path'
+    	if @carpet.update_attributes(carpet_params)
+    		redirect_to adminview_path
     	else
     		render 'edit'
     	end

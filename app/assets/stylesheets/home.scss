@@ -61,7 +61,7 @@
 
 *
 {
-	font-family: 'BioRhyme', serif;
+	font-family: 'Englebert', sans-serif;
 }
 
 .PhotoArea
@@ -116,10 +116,10 @@
 
 .CarpetBox
 {
-  height: 320px;
+  height: 240px;
   border: 1px solid #aaa;
   border-radius: 3px;
-  width: 80%;
+  width: 70%;
   margin-top: 1.5%;	
   margin-left: auto;
   margin-right: auto;
@@ -145,4 +145,15 @@
 .CarpetCategory
 {
 	padding: 5px;
+}
+
+.fitpreview
+{
+	width: 100%;
+	height: 100%;
+}
+
+.carouselimage
+{
+	height: 500px;
 }
