@@ -55,4 +55,9 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'fog'
 gem 'fog-aws'
+<<<<<<< HEAD
  
+=======
+ 
+gem 'friendly_id'
+>>>>>>> 4489bcb0c0cb5b47c06c25d23ed68fc5f47c6f91
