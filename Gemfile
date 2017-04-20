@@ -56,4 +56,4 @@ gem 'carrierwave', '~> 1.0'
 gem 'fog'
 gem 'fog-aws'
  
-gem 'actionpack-page_caching'
+gem 'friendly_id'
