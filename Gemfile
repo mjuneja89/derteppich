@@ -29,9 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -55,9 +52,5 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'fog'
 gem 'fog-aws'
-<<<<<<< HEAD
- 
-=======
- 
-gem 'friendly_id'
->>>>>>> 4489bcb0c0cb5b47c06c25d23ed68fc5f47c6f91
+
+gem "font-awesome-rails"

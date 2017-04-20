@@ -15,7 +15,7 @@
     <h1>contact us</h1>     
   </div>
   
-  <div class="row" style="margin-top: 3%; text-align: center">
+  <div class="row" style="margin-top: 2%; text-align: center">
     <h4>C-178, LGF, Sarvodaya Enclave</h4>
     <h4>New Delhi - 110017, India</h4>
     <h4>Phone No: +91-9716299814, +917017101100</h4>
@@ -27,7 +27,7 @@
      
      <h1>enquire</h1>
 
-     <%= form_for(Contact.new, url: contacts_path, class: "form-group", :style => "text-align: center") do |f| %>
+     <%= form_for(Contact.new, url: contacts_path, class: "form-group", :style => "text-align: center; margin-top: 2%") do |f| %>
 
        <%= f.text_field :name, :placeholder => "enter your name", :id => "DerInput", :class => "form-control" %>
        <%= f.email_field :email, :placeholder => "enter your email", :id => "DerInput", :class => "form-control" %>
