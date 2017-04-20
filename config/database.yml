@@ -58,6 +58,6 @@ development:
 
 production:
   <<: *default
-  database: monalisa_production
-  username: monalisa
-  password: <%= ENV['MONALISA_DATABASE_PASSWORD'] %>
+  database: derteppich_production
+  username: derteppich
+  password: <%= ENV['DERTEPPICH_DATABASE_PASSWORD'] %>

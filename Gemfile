@@ -53,3 +53,6 @@ gem 'rails_12factor', group: :production
 
 gem 'carrierwave', '~> 1.0'
 
+gem 'fog'
+gem 'fog-aws'
+
