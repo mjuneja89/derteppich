@@ -1,3 +1,12 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#contactbg
+{
+	height: 900px;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("main.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}

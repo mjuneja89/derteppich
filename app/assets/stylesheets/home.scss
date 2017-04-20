@@ -69,7 +69,7 @@
 	display: block;
 	position: relative;
 	width: 100%;
-	height: 40rem;
+	height: 500px;
     color: #fff;
     background-size: cover;
 }
@@ -77,7 +77,7 @@
 @media only screen and (max-width: 767px) {
 	.PhotoArea
 	{
-	  height: 24rem;
+	  height: 350px;
 	  margin-top: 3%;
 	}
 }
@@ -89,7 +89,7 @@
 	}
 }
 
-.DerImage
+.DerImage1
 {
 	transition: opacity .4s;
 	position: absolute;
@@ -97,7 +97,49 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("carpets.jpg"));
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("handtufted.jpg"));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.DerImage2
+{
+	transition: opacity .4s;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("handloomweave.jpg"));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.DerImage3
+{
+	transition: opacity .4s;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("handloomdurries.jpg"));
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.DerImage4
+{
+	transition: opacity .4s;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(asset-path("handloomknotted.jpg"));
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;

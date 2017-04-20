@@ -19,4 +19,7 @@ Rails.application.routes.draw do
 
   get '/contact' => 'contacts#contact'
 
+
+  get '/search' => "search#search"
+
 end
