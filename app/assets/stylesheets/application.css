@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require bootstrap_and_overrides
+ *= require font-awesome
  *= require_self
  */
 
@@ -19,3 +20,29 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url('https://fonts.googleapis.com/css?family=BioRhyme');
 @import url('https://fonts.googleapis.com/css?family=Englebert');
+
+html
+{
+	position: relative;
+	min-height: 100%;
+}
+
+body
+{
+	margin: 0 0 50px;
+	padding-bottom: 25px;
+}
+
+.footer
+{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 50px;
+   width: 100%;
+   overflow: hidden;
+   background-color: #262626;
+   color: white;
+   padding-top: 15px;
+}
+

@@ -158,7 +158,7 @@
 
 .CarpetBox
 {
-  height: 240px;
+  height: 220px;
   border: 1px solid #aaa;
   border-radius: 3px;
   width: 70%;
@@ -176,6 +176,11 @@
 {
 	height: 100%;
 	width: 100%;
+}
+
+.CarpetDesc
+{
+  font-size: 13pt;
 }
 
 .CarpetDescriptionBox
@@ -198,4 +203,21 @@
 .carouselimage
 {
 	height: 500px;
+}
+
+#footerlink a:link
+{
+  color: white;
+}
+
+
+#footerlink a:hover
+{
+  color: white;
+}
+
+
+#footerlink a:visited
+{
+  color: white;
 }

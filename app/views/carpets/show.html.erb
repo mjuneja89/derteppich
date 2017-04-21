@@ -20,10 +20,14 @@
 </div> 
 <div class="col-sm-6">
     <h2><%= @carpet.name %></h2>
+    <div class="CarpetDesc">
     <p><%= simple_format @carpet.description %></p>
+    </div>
 </div>
 </div>
 
 </div>
+
+<%= render :partial => 'shared/footer' %>	
 	
 </body>
