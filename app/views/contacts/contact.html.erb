@@ -9,12 +9,10 @@
 
 <%= render 'shared/navbar' %>
 
-<div id="contactbg">
-
-<div class="container-fluid">
+<div class="container-fluid" id="contactbg">
   
   <div class="row" style="margin-top: 3%; text-align: center; color: white">
-    <h1>contact us</h1>     
+    <h1>Contact Us</h1>     
   </div>
   
   <div class="row" style="margin-top: 2%; text-align: center; color: white">
@@ -30,7 +28,7 @@
      <h1>enquire</h1>
 
      <%= form_for(Contact.new, url: contacts_path, class: "form-group", :style => "text-align: center; margin-top: 2%") do |f| %>
-
+ 
        <%= f.text_field :name, :placeholder => "enter your name", :id => "DerInput", :class => "form-control" %>
        <%= f.email_field :email, :placeholder => "enter your email", :id => "DerInput", :class => "form-control" %>
        <%= f.text_area :description, :placeholder => "how can we help you?", :id => "DerInputArea", :class => "form-control" %>
@@ -41,8 +39,6 @@
      <% end %> 
     </div>
   </div>
-
-</div>
 
 </div>
 
