@@ -5,7 +5,7 @@ class CarpetsController < ApplicationController
     end
 
     def handloomweave
-        @handloomweaves = Carpet.where(:category => 'handloom weave')
+        @handloomweave = Carpet.where(:category => 'handloom weave')
     end
 
     def handloomdurries
