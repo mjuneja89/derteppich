@@ -27,7 +27,7 @@
   <h2 style="margin-top: 3%">Handloom Weaves</h2>
   
   <% if @handloomweave.present? %>
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
   <% @handloomweave.each do |carpet| %>
     <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
   <% end %>

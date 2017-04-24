@@ -73,10 +73,16 @@
 
 <div class="container-fluid">
   
+  <div class="History" style="margin-top: 3%">
+    <h2>History of Carpets</h2>
+    <p>The knotted pile carpet probably originated in the 3rd or 2nd millennium BC in West Asia, perhaps the Caspian Sea area (Northern Iran) or the Armenian Highland, although there is evidence of goats and sheep being sheared for wool and hair which was spun and woven as far back at the 7th millennium. This region, for this reason, is termed as the cradle of carpet weaving.</p>
+    <p>The earliest surviving pile carpet is the "Pazyryk carpet", which dates from the 5th-4th century BC. It was excavated by Sergei Ivanovich Rudenko in 1949 from a Pazyryk burial mound in the Altai Mountains in Siberia.</p>
+  </div>
+
   <h2 style="margin-top: 3%">Handloom Weaves</h2>
   
   <% if @handloomweave.present? %>
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
   <% @handloomweave.each do |carpet| %>
     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
   <% end %>
@@ -94,7 +100,7 @@
   <h2>Hand Knotted</h2>
   
   <% if @handknotted.present? %>
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
    <% @handknotted.each do |carpet| %>
      <%= render :partial => 'carpet', locals: { carpet: carpet } %>
    <% end %>
@@ -113,7 +119,7 @@
   <h2>Hand Tufted</h2>
   
   <% if @handtufted.present? %>  
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
    <% @handtufted.each do |carpet| %>
      <%= render :partial => 'carpet', locals: { carpet: carpet } %>
    <% end %>
@@ -131,7 +137,7 @@
  <h2>Handloom Durries</h2>
   
   <% if @handloomdurries.present? %>
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
    <% @handloomdurries.each do |carpet| %>
      <%= render :partial => 'carpet', locals: { carpet: carpet } %>
    <% end %>

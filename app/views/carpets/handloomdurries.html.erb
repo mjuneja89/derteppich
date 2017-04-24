@@ -25,7 +25,7 @@
   <h2 style="margin-top: 3%">Handloom Durries</h2>
   
   <% if @handloomdurries.present? %>
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
    <% @handloomdurries.each do |carpet| %>
      <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
    <% end %>

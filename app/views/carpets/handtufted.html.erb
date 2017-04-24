@@ -26,7 +26,7 @@
   <h2 style="margin-top: 3%">Hand Tufted</h2>
   
  <% if @handtufted.present? %>  
-  <div class="row" style="margin-top: 3%">  
+  <div class="row">  
    <% @handtufted.each do |carpet| %>
      <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
    <% end %>
