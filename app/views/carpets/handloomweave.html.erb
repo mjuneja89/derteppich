@@ -26,13 +26,16 @@
   
   <h2 style="margin-top: 3%">Handloom Weaves</h2>
   
-  <% if @handloomweave.present? %>
   <div class="row">  
-  <% @handloomweave.each do |carpet| %>
-    <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
-  <% end %>
+    <div id="carpetfeed">
+     <%= render :partial => 'shared/carpet', collection: @carpets %>
+    </div> 
   </div>
-  <% end %>
+ 
+
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <%= paginate @carpets %>
+  </div>
 
 </div>  
 

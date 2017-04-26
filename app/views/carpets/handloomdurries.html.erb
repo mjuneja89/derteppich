@@ -24,13 +24,16 @@
   
   <h2 style="margin-top: 3%">Handloom Durries</h2>
   
-  <% if @handloomdurries.present? %>
   <div class="row">  
-   <% @handloomdurries.each do |carpet| %>
-     <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
-   <% end %>
+   <div id="carpetfeed">
+     <%= render :partial => 'shared/carpet', collection: @carpets %>
+   </div>  
   </div>
-  <% end %>
+ 
+
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <%= paginate @carpets %>
+  </div>
 
 </div>
 

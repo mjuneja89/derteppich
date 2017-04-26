@@ -15,3 +15,19 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  if ($('nav.pagination').length) {
+    $(window).scroll(function() {
+      var url = $('nav.pagination a[rel=next]').attr('href');
+      var spinner = $('<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>');
+      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+        $('.pagination').html(spinner);
+        return $.getScript(url);
+      }
+    });
+    return $(window).scroll();
+  }
+});
+
+

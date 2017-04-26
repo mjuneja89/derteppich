@@ -25,13 +25,16 @@
   
   <h2 style="margin-top: 3%">Hand Tufted</h2>
   
- <% if @handtufted.present? %>  
   <div class="row">  
-   <% @handtufted.each do |carpet| %>
-     <%= render :partial => 'shared/carpet', locals: { carpet: carpet } %>
-   <% end %>
+   <div id="carpetfeed"> 
+     <%= render :partial => 'shared/carpet', collection: @carpets %>
+   </div>  
   </div>
-  <% end %>
+ 
+
+  <div class="row" style="margin-top: 3%; text-align: center">
+    <%= paginate @carpets %>
+  </div>
 
 </div>
 

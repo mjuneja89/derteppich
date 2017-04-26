@@ -57,4 +57,4 @@ gem "font-awesome-rails"
 
 gem 'puma'
 
-
+gem 'kaminari'

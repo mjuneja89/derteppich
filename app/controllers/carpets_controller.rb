@@ -1,19 +1,19 @@
 class CarpetsController < ApplicationController
     
     def handtufted
-        @handtufted = Carpet.where(:category => 'hand tufted')
+        @carpets = Carpet.where(:category => 'hand tufted').page(params[:page]).per(8) 
     end
 
     def handloomweave
-        @handloomweave = Carpet.where(:category => 'handloom weave')
+        @carpets = Carpet.where(:category => 'handloom weave').page(params[:page]).per(8) 
     end
 
     def handloomdurries
-        @handloomdurries = Carpet.where(:category => 'handloom durries')
+        @carpets = Carpet.where(:category => 'handloom durries').page(params[:page]).per(8) 
     end
     
     def handknotted
-        @handknotted = Carpet.where(:category => 'hand knotted')
+        @carpets = Carpet.where(:category => 'hand knotted').page(params[:page]).per(8) 
     end
     
 

@@ -1,0 +1,6 @@
+$('#carpetfeed').append('<%= escape_javascript(render(:partial => "shared/carpet", collection: @carpets)).html_safe %>');
+<% if @carpets.last_page? %>
+$('.pagination').hide();
+<% else %>
+$('.pagination').replaceWith('<%= escape_javascript(paginate @carpets).html_safe %>');
+<% end %>
