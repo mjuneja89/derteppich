@@ -58,3 +58,6 @@ gem "font-awesome-rails"
 gem 'puma'
 
 gem 'kaminari'
+
+#jquery Turbolinks
+gem 'jquery-turbolinks', '~> 0.2.1'
