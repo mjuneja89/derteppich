@@ -1,0 +1,75 @@
+
+<head>
+
+<title>Der Teppich International: Sign In</title>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+ 
+     $("#photobtn").click(function(){
+  
+     $("#photofield").click(); 
+
+   });
+
+   });
+
+  </script>
+
+  <script type="text/javascript">
+    
+    $(document).ready(function(){
+    var box = $("#avatarbox");
+    var preview = $("#avatarbox img");
+
+    $("#photofield").change(function(event){
+       var input = $(event.currentTarget);
+       var file = input[0].files[0];
+       var reader = new FileReader();
+       reader.onload = function(e){
+           image_base64 = e.target.result;
+           preview.attr("src", image_base64);
+       };
+       reader.readAsDataURL(file);
+       box.show();
+    });   
+  });
+
+ </script>
+
+
+</head>
+
+<body>
+
+
+<%= render 'shared/navbar' %>
+
+<div class="container-fluid">
+   
+   <div class="row">
+     
+     <div class="col-sm-6 col-sm-offset-3" style="margin-top: 3%; text-align: center">
+
+        <div id="avatarbox">
+          <img class="fitpreview" />
+        </div>
+       
+       <%= form_for(:session, url: login_path) do |f| %>
+        
+
+          <%= f.text_field :username, :placeholder => "enter username", :class => "form-control", :id => "DerInputArea" %>
+          <%= f.password_field :password, :placeholder => "enter password", :class => "form-control", :id => "DerInputArea" %>
+
+          <%= f.submit "login", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
+
+       <% end %>
+
+     </div>
+
+   </div>
+
+</div>
+	
+</body>
