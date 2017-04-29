@@ -20,6 +20,7 @@
     <h4>New Delhi - 110017, India</h4>
     <h4>Phone No: +91-9716299814, +91-7017101100</h4>
     <h4>Email: derteppichinternational@gmail.com</h4>
+    <h4>Website: www.derteppichinternational.com</h4>
   </div>
 
   <div class="row" style="margin-top: 3%; text-align: center; color: white">
@@ -27,7 +28,7 @@
      
      <h1>enquire</h1>
 
-     <%= form_for(Contact.new, url: contacts_path, class: "form-group", :style => "text-align: center; margin-top: 2%") do |f| %>
+     <%= form_for(@contact, url: contacts_path, class: "form-group", :style => "text-align: center; margin-top: 2%") do |f| %>
  
        <%= f.text_field :name, :placeholder => "enter your name", :id => "DerInput", :class => "form-control" %>
        <%= f.email_field :email, :placeholder => "enter your email", :id => "DerInput", :class => "form-control" %>

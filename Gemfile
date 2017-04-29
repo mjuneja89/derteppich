@@ -61,3 +61,5 @@ gem 'kaminari'
 
 #jquery Turbolinks
 gem 'jquery-turbolinks', '~> 0.2.1'
+
+gem 'mail_form'
