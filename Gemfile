@@ -63,3 +63,5 @@ gem 'kaminari'
 gem 'jquery-turbolinks', '~> 0.2.1'
 
 gem 'mail_form'
+
+gem 'fancybox-rails'

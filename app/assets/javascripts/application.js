@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require fancybox
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
@@ -27,6 +28,10 @@ $(document).ready(function() {
     });
     return $(window).scroll();
   }
+});
+
+$(document).ready(function() {
+  $("a.fancybox").fancybox();
 });
 
 

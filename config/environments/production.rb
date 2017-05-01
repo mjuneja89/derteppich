@@ -76,7 +76,7 @@ Rails.application.configure do
     :domain             => 'gmail.com', 
     :authentication     => :plain,
     :user_name          => 'derteppichinternational@gmail.com',
-    :password           => 'Tushti2209b'
+    :password           => 'Arjun0611b'
    } 
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
