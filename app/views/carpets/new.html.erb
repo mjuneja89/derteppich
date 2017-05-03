@@ -60,6 +60,7 @@
           
           <%= f.text_field :name, :placeholder => "enter carpet's name", :id => "DerInput", :class => "form-control" %>
           <%= f.text_area :description, :placeholder => "enter carpet's description", :id => "DerInputArea", :class => "form-control" %>
+          <%= f.number_field :priority_id, :placeholder => "enter the carpet's priority", :class => "form-control" %>
 
           <%= f.select(:category, options_for_select([['category', nil], ['hand tufted', 'hand tufted'], ['handloom weave', 'handloom weave'], ['handloom durries', 'handloom durries'], ['hand knotted', 'hand knotted']]), {}, {id: "DerInput"}) %>
 

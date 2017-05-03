@@ -1,19 +1,19 @@
 class CarpetsController < ApplicationController
     
     def handtufted
-        @carpets = Carpet.where(:category => 'hand tufted').page(params[:page]).per(8) 
+        @carpets = Carpet.where(:category => 'hand tufted').order(:priority_id).page(params[:page]).per(8) 
     end
 
     def handloomweave
-        @carpets = Carpet.where(:category => 'handloom weave').page(params[:page]).per(8) 
+        @carpets = Carpet.where(:category => 'handloom weave').order(:priority_id).page(params[:page]).per(8) 
     end
 
     def handloomdurries
-        @carpets = Carpet.where(:category => 'handloom durries').page(params[:page]).per(8) 
+        @carpets = Carpet.where(:category => 'handloom durries').order(:priority_id).page(params[:page]).per(8) 
     end
     
     def handknotted
-        @carpets = Carpet.where(:category => 'hand knotted').page(params[:page]).per(8) 
+        @carpets = Carpet.where(:category => 'hand knotted').order(:priority_id).page(params[:page]).per(8) 
     end
     
 
@@ -60,7 +60,7 @@ class CarpetsController < ApplicationController
     private
 
     def carpet_params
-    	params.require(:carpet).permit(:name, :description, :category, :photo)
+    	params.require(:carpet).permit(:name, :description, :category, :photo, :priority_id)
     end
 
 end
