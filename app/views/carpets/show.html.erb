@@ -12,16 +12,16 @@
 
 <div class="container-fluid">
 
- <div style="display: none">
+<div style="display: none">
    <div id="Enlarged" class="EnlargedImageBox">
      <%= image_tag @carpet.photo_url, :class => "fitimg" %>
    </div>
  </div>
 
-<div class="row" style="margin-top: 3%">
+ <div class="row" style="margin-top: 3%">
 <div class="col-sm-6">
  <div class="BigImageBox"> 
-  <%= link_to "#Enlarged", class: "fancybox" do %> 
+  <%= link_to "#Enlarged", :rel => "group", class: "fancybox" do %> 
    <%= image_tag @carpet.photo_url, :class => "fitimg" %>
   <% end %> 
   </div> 

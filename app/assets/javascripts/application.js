@@ -31,7 +31,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("a.fancybox").fancybox();
+  $("a.fancybox").fancybox({
+     'type': 'inline'
+  });
+  $("a#fancybox-close").click(function(){
+     $("#Enlarged").hide();
+  });
 });
 
 
