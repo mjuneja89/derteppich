@@ -17,7 +17,15 @@ Rails.application.routes.draw do
 
   get '/adminview' => 'admin#adminview'
 
-  resources :carpets
+  resources :carpets do
+    
+    get '/editpriority' => "carpets#editpriority"
+    patch '/updatepriority' => "carpets#updatepriority"
+
+    get '/editcategory' => "carpets#editcategory"
+    patch '/updatecategory' => "carpets#updatecategory"
+  
+  end
 
   resources :contacts
 

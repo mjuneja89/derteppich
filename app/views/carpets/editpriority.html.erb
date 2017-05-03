@@ -1,0 +1,37 @@
+
+<head>
+
+<title>Der Teppich International: New Carpet</title>
+
+</head>
+
+<body>
+
+
+<%= render 'shared/navbar' %>
+
+<div class="container-fluid">
+   
+   <div class="row">
+     
+     <div class="col-sm-6 col-sm-offset-3" style="margin-top: 3%; text-align: center">
+
+        <div id="avatarbox">
+          <img class="fitpreview" />
+        </div>
+       
+       <%= form_for(@carpet, url: carpet_updatepriority_path(@carpet)) do |f| %>
+          
+          <%= f.number_field :priority_id, :placeholder => "enter the carpet's priority", :id => "DerInput", :class => "form-control" %>
+
+          <%= f.submit "update", :id => "AdminButton1", :class => "btn btn-default", :style => "margin-top: 3%" %>
+
+       <% end %>
+
+     </div>
+
+   </div>
+
+</div>
+	
+</body>

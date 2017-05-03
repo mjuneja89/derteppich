@@ -12,11 +12,45 @@
 
 <div class="container-fluid">
 
-<div class="row">
+  <h2 style="margin-top: 1.5%">Handloom Weaves</h2>
   
-  <%= render :partial => 'carpet', collection: @carpets %>
+  <% if @handloomweave.present? %>
+  <div class="row">  
+  <% @handloomweave.each do |carpet| %>
+    <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+  <% end %>
+  </div>
+  <% end %>
+  
+  <h2>Hand Knotted</h2>
+  
+  <% if @handknotted.present? %>
+  <div class="row">  
+   <% @handknotted.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
+  </div>
+  <% end %>
 
-</div>
+ <h2>Hand Tufted</h2>
+  
+  <% if @handtufted.present? %>  
+  <div class="row">  
+   <% @handtufted.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
+  </div>
+  <% end %>
+
+ <h2>Handloom Durries</h2>
+  
+  <% if @handloomdurries.present? %>
+  <div class="row">  
+   <% @handloomdurries.each do |carpet| %>
+     <%= render :partial => 'carpet', locals: { carpet: carpet } %>
+   <% end %>
+  </div>
+  <% end %>
 
 </div>
 	
