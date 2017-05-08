@@ -38,6 +38,13 @@ class CarpetsController < ApplicationController
     	@carpet = Carpet.find(params[:id])
     end
 
+    def fancybox
+      @carpet = Carpet.find(params[:carpet_id])
+      respond_to do |format|
+        format.js
+      end
+    end
+
     def edit
        if current_user 
     	@carpet = Carpet.find(params[:id])
